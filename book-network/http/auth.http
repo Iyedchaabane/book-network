@@ -1,0 +1,25 @@
+###
+POST http://localhost:8088/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "firstname": "isra",
+  "lastname": "isra",
+  "email": "chaabaneisra123@gmail.com",
+  "password": "isra*"
+}
+
+###
+POST http://localhost:8088/api/v1/auth/authenticate
+Content-Type: application/json
+
+{
+  "email": "chaabaneisra123@gmail.com",
+  "password": "isra*"
+}
+
+###
+GET http://localhost:8088/api/v1/auth/activate-account?token=12
+Accept: application/json
+
+###
